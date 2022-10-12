@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Header from './components/Header';
+import Home from './pages/Home';
+import { Routes, Route, Link } from "react-router-dom";
+import Temperature from './pages/Temperature';
+import Co2 from './pages/Co2';
+import Methane from './pages/Methane';
+import No2 from './pages/No2';
+import Ice from './pages/Ice';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+ return(
+    <>
+   <Header />
+  <Routes>
+   <Route path="/" element={<Home />} />
+   <Route path="temperature" element={<Temperature />} />
+   <Route path="co2" element={<Co2 />} />
+   <Route path="methane" element={<Methane />} />
+   <Route path="no2" element={<No2 />} />
+   <Route path="ice" element={<Ice />} />
+  </Routes>
+  </>
+ )
 }
 
 export default App;
