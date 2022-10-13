@@ -14,7 +14,7 @@ function Charts() {
     <>
       <section id="charts" data-aos="fade-left"  className="h-max my-20 px-5">
         <div className="  flex flex-col gap-7 items-center lg:flex-row lg:justify-center">
-          <div className="card">
+          <div className="card " >
             <div className="p-4">
               <h4 className="card-title">
               We are on fire
@@ -24,7 +24,7 @@ function Charts() {
                 Celsius) per decade since 1880, but the rate of warming since
                 1981 is more than twice that: 0.32° F (0.18° C) per decade
               </p>
-              <button className="card-button">
+              <button className="card-button " data-mdb-ripple="true">
                 <NavLink to="/temperature">Read more</NavLink>
               </button>
             </div>
