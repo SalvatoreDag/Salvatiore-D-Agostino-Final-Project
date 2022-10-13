@@ -34,7 +34,6 @@ Contact me [here](salvatore-dagostino@hotmail.it)
 
 ```
  git clone https://github.com/SalvatoreDag/Salvatiore-D-Agostino-Final-Project.git
- 
 ```
 
 ### `npm start`
