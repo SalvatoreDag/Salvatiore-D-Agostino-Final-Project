@@ -8,7 +8,7 @@ import { Link } from "react-scroll";
 
 function Hero() {
   return (
-    <section id="hero" className=" h-screen bg-hero-pattern ">
+    <section id="hero" className=" h-screen w-12/12 bg-hero-pattern bg-auto">
       <div className="h-screen flex flex-col justify-center items-center gap-20">
         <div>
           <h1 className="text-white uppercase text-3xl font-bold md:text-4xl lg:text-5xl">
