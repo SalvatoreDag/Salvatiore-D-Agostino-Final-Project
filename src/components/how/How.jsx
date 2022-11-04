@@ -1,12 +1,12 @@
 import React from "react";
 import solar from "../../img/solar2.jpg";
 import bycicle from "../../img/bycicle.jpg";
-import vegetables from "../../img/vegetables.jpg";
+import vegetables from "../../img/vegetables2.png";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 
-function How() {
+function How({}) {
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
@@ -14,7 +14,7 @@ function How() {
   return (
     <section id="how" data-aos="fade-right" className="px-10 lg:px-28">
       <h1 className="text-gray-800 text-center font-bold text-xl mt-10 md:text-2xl">
-        Let's make the world green again
+        LET'S MAKE THE WORLD GREEN AGAIN
       </h1>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
         <div className="lg:m-auto">
@@ -47,11 +47,18 @@ function How() {
         <div className="lg:m-auto">
           <h2 className="how-title">Greens from original greens</h2>
           <p className="how-text">
-            Eating more <a className="underline cursor-pointer" href="https://goveggie.netlify.app/" target="_blank">vegetables</a>, fruits, whole grains, legumes, nuts and
-            seeds, and less meat and dairy products can significantly reduce
-            your environmental impact. Generally, the production of plant-based
-            foods results in fewer greenhouse gas emissions and requires less
-            energy, land and water.
+            Eating more{" "}
+            <a
+              className=" rounded-lg text-white px-1 bg-green-primary cursor-pointer"
+              href="https://goveggie.netlify.app/"
+              target="_blank"
+            >
+              vegetables
+            </a>
+            , fruits, whole grains, legumes, nuts and seeds, and less meat and
+            dairy products can significantly reduce your environmental impact.
+            Generally, the production of plant-based foods results in fewer
+            greenhouse gas emissions and requires less energy, land and water.
           </p>
         </div>
         <div>

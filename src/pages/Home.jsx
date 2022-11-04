@@ -1,7 +1,8 @@
 import React from "react";
-import Charts from "../components/landingpage/Charts";
-import Hero from "../components/landingpage/Hero";
-import How from "../components/landingpage/How";
+import Charts from "../components/charts/Charts";
+import Hero from "../components/hero/Hero";
+import How from "../components/how/How";
+import Footer from "../components/footer/Footer"
 import { AnimatePresence, motion } from "framer-motion";
 
 function Home() {
@@ -17,6 +18,7 @@ function Home() {
       </motion.div>
       <Charts />
       <How />
+      <Footer />
     </AnimatePresence>
   );
 }
