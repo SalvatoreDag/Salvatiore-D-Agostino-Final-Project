@@ -14,7 +14,7 @@ function Home() {
         exit={{ opacity: 0 }}
         transition={{ duration: 1 }}
       >
-        <Hero />
+      <Hero />
       </motion.div>
       <Charts />
       <How />

@@ -13,7 +13,6 @@ function Render() {
   const [input, setInput] = useState([]);
   const [title, setTitle] = useState();
   const [success, setSuccess] = useState(false);
-  
 
   const page = DataPages[id];
 
@@ -34,12 +33,11 @@ function Render() {
 
   useEffect(() => {
     getData();
-    setSuccess(false)
+    setSuccess(false);
   }, [id]);
 
   return (
     <motion.div
-   
       animate={{ opacity: 1 }}
       initial={{ opacity: 0 }}
       exit={{ opacity: 0 }}
@@ -51,7 +49,8 @@ function Render() {
           subtitle={page.subtitle}
           description={page.description}
         ></Content>
-        {success ? (<Chart data={input} name={title} />) : (<Spinner />)}
+        {success ? <Chart data={input} name={title} /> : <Spinner />}
+        <p className="chart-source">{page.source}</p>
       </div>
     </motion.div>
   );

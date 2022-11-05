@@ -83,11 +83,11 @@ html {
 }
 
 .chart-container{
-@apply bg-white rounded-xl p-3 md:w-9/12 md:mx-auto w-max
+@apply bg-white rounded-xl w-screen p-3 md:w-9/12 mx-auto 
 }
 
 .chart-source{
-@apply mt-5 text-gray-600 text-xs
+@apply mt-5 text-center text-white text-xs
 }
 
 /*CHART PAGES*/

@@ -13,12 +13,6 @@ function Content(props) {
         {props.description}
         </p>
       </div>
-      {/* <div className="chart-container">
-        {props.chart}
-        <p className="chart-source">
-            {props.source}
-          </p>
-      </div> */}
     </div>
   </section>
   )
