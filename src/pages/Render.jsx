@@ -2,8 +2,7 @@ import React from "react";
 import Content from "../components/content/Content";
 import Chart from "../components/chart/Chart";
 import { useState, useEffect } from "react";
-import { useParams } from "react-router-dom";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import Spinner from "../components/spinner/Spinner";
 import { useLoaderData } from "react-router-dom";
 
