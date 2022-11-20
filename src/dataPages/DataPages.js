@@ -61,7 +61,7 @@ const DataPages = {
         From 1983.07 this data is measured on a monthly basis`,
 	},
       'nitrous-oxide': {
-		title: 'Nitrous',
+		title: 'Nitrous oxide',
 		subtitle: 'NO2 is 300 times more potent than CO2',
 		description: ` Nitrous oxide is a gas that is produced by the combustion of fossil
         fuel and solid waste, nitrogen-base fertilizers, sewage treatment

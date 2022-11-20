@@ -1,40 +1,30 @@
 import React from "react";
 import Content from "../components/content/Content";
-import DataPages from "../dataPages/DataPages";
 import Chart from "../components/chart/Chart";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import ClientApi from "../components/clientApi/ClientApi";
 import { AnimatePresence, motion } from "framer-motion";
 import Spinner from "../components/spinner/Spinner";
+import { useLoaderData } from "react-router-dom";
 
 function Render() {
-  let { id } = useParams();
+  const [dati, name, subtitle, description, source] = useLoaderData();
+
   const [input, setInput] = useState([]);
   const [title, setTitle] = useState();
   const [success, setSuccess] = useState(false);
 
-  const page = DataPages[id];
-
-  const getData = async () => {
-    try {
-      const result = await ClientApi(`${id}-api`);
-      setInput(
-        result.result ||
-          result.co2 ||
-          result.methane ||
-          result.nitrous ||
-          result.arcticData
-      );
-      setTitle(id);
-      setSuccess(true);
-    } catch (error) {}
-  };
-
   useEffect(() => {
-    getData();
-    setSuccess(false);
-  }, [id]);
+    setInput(
+      dati.result ||
+        dati.co2 ||
+        dati.methane ||
+        dati.nitrous ||
+        dati.arcticData
+    );
+    setTitle(name);
+    setSuccess(true);
+  }, [dati]);
 
   return (
     <motion.div
@@ -45,12 +35,12 @@ function Render() {
     >
       <div className="py-10 h-max bg-bg-svg bg-repeat-round">
         <Content
-          title={page.title}
-          subtitle={page.subtitle}
-          description={page.description}
+          title={name}
+          subtitle={subtitle}
+          description={description}
         ></Content>
         {success ? <Chart data={input} name={title} /> : <Spinner />}
-        <p className="chart-source">{page.source}</p>
+        <p className="chart-source">{source}</p>
       </div>
     </motion.div>
   );

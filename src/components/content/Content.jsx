@@ -8,7 +8,7 @@ function Content(props) {
         <h1 className="chart-title">
         {props.title}
         </h1>
-        <h2 className='text-lg text-center'>{props.subtitle}</h2>
+        <p className='text-lg text-center'>{props.subtitle}</p>
         <p className="mt-10 md:text-lg">
         {props.description}
         </p>

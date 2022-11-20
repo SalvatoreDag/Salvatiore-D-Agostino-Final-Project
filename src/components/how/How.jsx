@@ -13,12 +13,12 @@ function How({}) {
 
   return (
     <section id="how" data-aos="fade-right" className="px-10 lg:px-28">
-      <h1 className="text-gray-800 text-center font-bold text-xl mt-10 md:text-2xl">
+      <h2 className="text-gray-800 text-center font-bold text-xl mt-10 md:text-2xl">
         LET'S MAKE THE WORLD GREEN AGAIN
-      </h1>
+      </h2>
       <div className="grid grid-cols-1 gap-5 md:grid-cols-2">
         <div className="lg:m-auto">
-          <h2 className="how-title">Switch the eco energy</h2>
+          <h3 className="how-title">Switch the eco energy</h3>
           <p className="how-text">
             Ask your utility company if your home's energy comes from oil, coal,
             or gas. If possible, see if you can switch to renewable sources such
@@ -27,11 +27,11 @@ function How({}) {
           </p>
         </div>
         <div>
-          <img src={solar}></img>
+          <img src={solar} alt="solar panels and wind turbines"></img>
         </div>
 
         <div className="lg:m-auto">
-          <h2 className="how-title">Pedal, walk, use public transport</h2>
+          <h3 className="how-title">Pedal, walk, use public transport</h3>
           <p className="how-text">
             The roads of the world are clogged with vehicles, most of which burn
             diesel or gasoline. Walking or cycling instead of driving will
@@ -41,28 +41,21 @@ function How({}) {
           </p>
         </div>
         <div>
-          <img src={bycicle}></img>
+          <img src={bycicle} alt="people on bicycles"></img>
         </div>
 
         <div className="lg:m-auto">
-          <h2 className="how-title">Greens from original greens</h2>
+          <h3 className="how-title">Greens from original greens</h3>
           <p className="how-text">
-            Eating more{" "}
-            <a
-              className=" rounded-lg text-white px-1 bg-green-primary cursor-pointer"
-              href="https://goveggie.netlify.app/"
-              target="_blank"
-            >
-              vegetables
-            </a>
-            , fruits, whole grains, legumes, nuts and seeds, and less meat and
-            dairy products can significantly reduce your environmental impact.
-            Generally, the production of plant-based foods results in fewer
-            greenhouse gas emissions and requires less energy, land and water.
+            Eating more vegetables, fruits, whole grains, legumes, nuts and
+            seeds, and less meat and dairy products can significantly reduce
+            your environmental impact. Generally, the production of plant-based
+            foods results in fewer greenhouse gas emissions and requires less
+            energy, land and water.
           </p>
         </div>
         <div>
-          <img src={vegetables}></img>
+          <img src={vegetables} alt="bag of vegetables"></img>
         </div>
       </div>
     </section>
