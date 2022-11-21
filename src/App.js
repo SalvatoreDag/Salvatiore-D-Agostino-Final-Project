@@ -1,5 +1,4 @@
 import "./App.css";
-import Header from "./components/header/Header";
 import Home from "./pages/Home";
 import Render from "./pages/Render";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -7,6 +6,7 @@ import RootLayout from "./pages/RootLayout";
 import ClientApi from "./utils/ClientApi";
 import ErrorPage from "./pages/ErrorPage";
 import DataPages from "./dataPages/DataPages";
+import { useEffect } from "react";
 
 const pages = createBrowserRouter([
   {
@@ -37,6 +37,16 @@ const pages = createBrowserRouter([
 ]);
 
 function App() {
+  useEffect(() => {
+    // loading bar
+    const ele = document.getElementById('ipl-progress-indicator')
+      if(ele){
+        ele.classList.add('available')
+        setTimeout(() => {
+          ele.outerHTML = ''
+        }, 2000)
+      }
+  }, []);
   return (
     <>
       <RouterProvider router={pages} />
