@@ -3,7 +3,6 @@ import Content from "../components/content/Content";
 import Chart from "../components/chart/Chart";
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import Spinner from "../components/spinner/Spinner";
 import { useLoaderData } from "react-router-dom";
 
 function Render() {
@@ -38,7 +37,7 @@ function Render() {
           subtitle={subtitle}
           description={description}
         ></Content>
-        {success ? <Chart data={input} name={title} /> : <Spinner />}
+        {success (<Chart data={input} name={title} />)}
         <p className="chart-source">{source}</p>
       </div>
     </motion.div>
