@@ -30,7 +30,6 @@ const pages = createBrowserRouter([
           ];
         },
         errorElement: <ErrorPage />,
-        name: DataPages.temperature.title,
       },
     ],
   },
