@@ -29,7 +29,7 @@ function Hero() {
           >
             <button className="bg-white text-gray-700 py-2 px-3 rounded-xl border-2 border-white flex items-center gap-2 hover:text-white hover:bg-gray-700 hover:border-gray-700 transition ease-out duration-500">
               <AiOutlineArrowDown />
-              <span>Learn More</span>
+              <p>Learn More</p>
             </button>
           </Scroll>
           <Scroll
@@ -42,7 +42,7 @@ function Hero() {
           >
             <button className=" bg-gray-700 text-white py-2 px-3 rounded-xl border-2 border-gray-700 flex items-center gap-2 hover:text-gray-700 hover:bg-white hover:border-white transition ease-out duration-500">
               <BsRecycle />
-              <span>Save the earth</span>
+              <p>Save the earth</p>
             </button>
           </Scroll>
         </div>
